@@ -1,0 +1,22 @@
+{
+  "name": "meu-arquivo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install --prefix back-end && npm install --prefix front-end",
+    "build": "npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end",
+    "dev": "concurrently \"npm run dev --prefix back-end\" \"npm run dev --prefix front-end\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadiaaamf/deploy-app-musica-fake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
